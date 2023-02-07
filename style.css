@@ -59,7 +59,7 @@ nav ul li{
     justify-content: center;
 }
 
-.defilement button{
+.defilement span{
    margin: 30px 30px 30px 0px;
    font-size: 30px;
    padding: 20px;
@@ -284,7 +284,10 @@ span .material-symbols-outlined  {
 
     .barre{
         display: none;
+    }
 
+    nav .profile h1{
+        font-size: 28px;
     }
     nav {
         justify-content: start;
@@ -296,7 +299,7 @@ span .material-symbols-outlined  {
         padding: 5px;
     }
     .slide img {
-        height: 300px;
+        height: 250px;
     }
 
     .page-content header{
@@ -312,7 +315,7 @@ span .material-symbols-outlined  {
     font-weight: bolder;
 }
 
-span .material-symbols-outlined {
+span.material-symbols-outlined {
     display: block;
     font-size: 18px;
     color: red;
