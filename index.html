@@ -4,10 +4,16 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      crossorigin
+      src="https://unpkg.com/react@17/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
     <link rel="stylesheet" href="style.css" />
-    <script>
-      import Caroussel from "./Caroussel.js";
-    </script>
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;500&display=swap"
       rel="stylesheet"
@@ -50,8 +56,40 @@
         </p>
       </header>
 
-      <script>
-        <Caroussel />;
+      <script type="text/babel">
+        const Carousel = () => {
+          const [currentIndex, setCurrentIndex] = useState(0);
+
+          const images = [
+            { src: "dist/images/tindev.PNG", alt: "tindev 1" },
+            { src: "dist/images/sarahUrbin.PNG", alt: "Image 2" },
+            { src: "dist/images/Epibet.PNG", alt: "Image 3" },
+            { src: "dist/images/ttt.PNG", alt: "Image 3" },
+          ];
+
+          const handlePrevious = () => {
+            const previousIndex = currentIndex - 1;
+            setCurrentIndex(
+              previousIndex < 0 ? images.length - 1 : previousIndex
+            );
+          };
+
+          const handleNext = () => {
+            const nextIndex = currentIndex + 1;
+            setCurrentIndex(nextIndex >= images.length ? 0 : nextIndex);
+          };
+
+          return (
+            <div>
+              <button onClick={handlePrevious}>Previous</button>
+              <img
+                src={images[currentIndex].src}
+                alt={images[currentIndex].alt}
+              />
+              <button onClick={handleNext}>Next</button>
+            </div>
+          );
+        };
       </script>
       <section class="projects-section">
         <h1>Mes réalisations</h1>
