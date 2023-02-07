@@ -58,7 +58,11 @@ nav ul li{
 }
 
 .defilement button{
-   margin-left: 30px;
+   margin: 30px 30px 30px 0px;
+}
+
+.active img {
+    width: auto;
 }
 /* nav ul li:hover{
     
