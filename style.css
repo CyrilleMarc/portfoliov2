@@ -296,6 +296,7 @@ footer .colonne p:hover{
         display: flex;
         flex-direction: column;
         padding: 5px;
+        width: 60%;
     }
     .slide img {
         height: 250px;
