@@ -62,7 +62,8 @@ nav ul li{
 }
 
 .slide img {
-    max-width: 90vw;
+    max-width: 80vw;
+    height: auto;
 }
 /* nav ul li:hover{
     
