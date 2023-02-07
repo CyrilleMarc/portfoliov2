@@ -57,11 +57,16 @@ nav ul li{
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
 
 .defilement span{
    margin: 30px 30px 30px 0px;
    font-size: 50px;
+}
+
+span.material-symbols-outlined{
+    display: none;
 }
 
 .slide img {
@@ -273,12 +278,6 @@ footer .colonne p:hover{
     font-size: 15px;
 }
 
-span .material-symbols-outlined  {
-    display: none;
-}
-
-
-
 @media screen and (max-width: 700px) {
 
     .barre{
@@ -286,7 +285,7 @@ span .material-symbols-outlined  {
     }
 
     nav .profile h1{
-        font-size: 28px;
+        font-size: 40px;
     }
     nav {
         justify-content: start;
@@ -319,15 +318,11 @@ span.material-symbols-outlined {
     font-size: 18px;
     color: red;
 }
+.defilement span{
+    margin: 20px 0px 20px 0px;
+    font-size: 50px;
+ }
 
-span#nextBtn.material-symbols-outlined {
-    font-size: 25px;
-}
-
-span#prevBtn.material-symbols-outlined {
-    font-size: 25px;
-    padding: 20px;
-}
 
 ul{
     font-family: 'Raleway', sans-serif;
