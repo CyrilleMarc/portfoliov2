@@ -22,6 +22,14 @@
       href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap"
       rel="stylesheet"
     />
+    <style>
+      .slide {
+        display: none;
+      }
+      .active {
+        display: block;
+      }
+    </style>
     <title>Portfolio Cyrille MARC</title>
   </head>
   <body>
@@ -55,41 +63,52 @@
           un peu plus d'un travail en autonomie et de qualité.
         </p>
       </header>
+      <div class="slider">
+        <div class="slide active">
+          <img src="dist/images/sarahUrbin.PNG" alt="Image 1" />
+        </div>
+        <div class="slide">
+          <img src="dist/images/Epibet.PNG" alt="Image 2" />
+        </div>
+        <div class="slide">
+          <img src="dist/images/sarahUrbin.PNG" alt="Image 3" />
+        </div>
+      </div>
+      <button id="prevBtn">Prev</button>
+      <button id="nextBtn">Next</button>
+      <script>
+        const slider = document.querySelector(".slider");
+        const slides = document.querySelectorAll(".slide");
+        const prevBtn = document.querySelector("#prevBtn");
+        const nextBtn = document.querySelector("#nextBtn");
 
-      <script type="text/babel">
-        const Carousel = () => {
-          const [currentIndex, setCurrentIndex] = useState(0);
+        let index = 0;
 
-          const images = [
-            { src: "dist/images/tindev.PNG", alt: "tindev 1" },
-            { src: "dist/images/sarahUrbin.PNG", alt: "Image 2" },
-            { src: "dist/images/Epibet.PNG", alt: "Image 3" },
-            { src: "dist/images/ttt.PNG", alt: "Image 3" },
-          ];
-
-          const handlePrevious = () => {
-            const previousIndex = currentIndex - 1;
-            setCurrentIndex(
-              previousIndex < 0 ? images.length - 1 : previousIndex
-            );
-          };
-
-          const handleNext = () => {
-            const nextIndex = currentIndex + 1;
-            setCurrentIndex(nextIndex >= images.length ? 0 : nextIndex);
-          };
-
-          return (
-            <div>
-              <button onClick={handlePrevious}>Previous</button>
-              <img
-                src={images[currentIndex].src}
-                alt={images[currentIndex].alt}
-              />
-              <button onClick={handleNext}>Next</button>
-            </div>
-          );
+        const showSlide = (n) => {
+          slides.forEach((slide) => (slide.style.display = "none"));
+          slides[n].style.display = "block";
         };
+
+        const prevSlide = () => {
+          index--;
+          if (index < 0) {
+            index = slides.length - 1;
+          }
+          showSlide(index);
+        };
+
+        const nextSlide = () => {
+          index++;
+          if (index >= slides.length) {
+            index = 0;
+          }
+          showSlide(index);
+        };
+
+        showSlide(index);
+
+        prevBtn.addEventListener("click", prevSlide);
+        nextBtn.addEventListener("click", nextSlide);
       </script>
       <section class="projects-section">
         <h1>Mes réalisations</h1>
