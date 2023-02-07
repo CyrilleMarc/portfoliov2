@@ -37,7 +37,7 @@ nav ul {
     list-style-type: none;
 }
 nav ul a{
-text-decoration: none;
+    text-decoration: none;
 }
 
 nav ul li{
@@ -274,7 +274,7 @@ footer .colonne p:hover{
     font-size: 15px;
 }
 
-.material-symbols-outlined {
+li .material-symbols-outlined {
     display: none;
 }
 
@@ -295,6 +295,9 @@ footer .colonne p:hover{
         flex-direction: column;
         padding: 5px;
     }
+    .slide img {
+        height: 300px;
+    }
 
     .page-content header{
         margin-top: 10%;
@@ -309,8 +312,14 @@ footer .colonne p:hover{
     font-weight: bolder;
 }
 
-.material-symbols-outlined {
+li .material-symbols-outlined {
     display: block;
+    font-size: 25px;
+    padding: 20px;
+}
+
+.defilement .material-symbols-outlined {
+    font-size: 25px;
 }
 
 ul{
