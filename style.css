@@ -51,9 +51,18 @@ nav ul li{
     text-decoration: none;
 }
 
-nav ul li:hover{
-    
+.defilement {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+.defilement button{
+   margin-left: 30px;
+}
+/* nav ul li:hover{
+    
+} */
 
 .page-content{
     margin: 4%
