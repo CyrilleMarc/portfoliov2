@@ -65,7 +65,7 @@ nav ul li{
    font-size: 50px;
 }
 
-span.material-symbols-outlined{
+.profile span{
     display: none;
 }
 
@@ -285,7 +285,7 @@ footer .colonne p:hover{
     }
 
     nav .profile h1{
-        font-size: 40px;
+        font-size: 23px;
     }
     nav {
         justify-content: start;
@@ -298,6 +298,10 @@ footer .colonne p:hover{
     }
     .slide img {
         height: 250px;
+    }
+
+    .page-content h1 {
+        font-size: 22px;
     }
 
     .page-content header{
@@ -313,9 +317,9 @@ footer .colonne p:hover{
     font-weight: bolder;
 }
 
-span.material-symbols-outlined {
+.profil span {
     display: block;
-    font-size: 18px;
+    font-size: 23px;
     color: red;
 }
 .defilement span{
