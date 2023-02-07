@@ -60,12 +60,13 @@ nav ul li{
     cursor: pointer;
 }
 
+/* //-------------------------- */
 .defilement span{
    margin: 30px 30px 30px 0px;
    font-size: 50px;
 }
 
-.profile span{
+#profileSpan {
     display: none;
 }
 
@@ -317,12 +318,17 @@ footer .colonne p:hover{
     font-weight: bolder;
 }
 
-.profil span {
+#profileSpan {
     display: block;
     font-size: 23px;
     color: red;
 }
-.defilement span{
+#prevBtn{
+    margin: 20px 0px 20px 0px;
+    font-size: 50px;
+ }
+
+ #nextBtn{
     margin: 20px 0px 20px 0px;
     font-size: 50px;
  }
