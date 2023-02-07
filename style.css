@@ -43,7 +43,6 @@ text-decoration: none;
 nav ul li{
     margin-left: 30px;
     cursor: pointer;
-    border-bottom: 2px solid white;
     font-family: 'Raleway', sans-serif;
     font-weight: bolder;
     color: black; 
@@ -62,7 +61,7 @@ nav ul li{
 }
 
 .slide img {
-    max-width: 80vw;
+    max-width: 83.5vw;
     height: auto;
 }
 /* nav ul li:hover{
@@ -270,6 +269,10 @@ footer .colonne p:hover{
     font-size: 15px;
 }
 
+.material-symbols-outlined {
+    display: none;
+}
+
 
 
 @media screen and (max-width: 700px) {
@@ -285,7 +288,6 @@ footer .colonne p:hover{
     nav ul{
         display: flex;
         flex-direction: column;
-        text-decoration: underline;
         padding: 5px;
     }
 
@@ -300,6 +302,10 @@ footer .colonne p:hover{
 .profile{
     font-family: 'Raleway', sans-serif;
     font-weight: bolder;
+}
+
+.material-symbols-outlined {
+    display: block;
 }
 
 ul{
