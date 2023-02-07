@@ -273,11 +273,6 @@ footer .colonne p:hover{
     color: red;
     font-size: 15px;
 }
-span .material-symbols-outlined {
-    display: block;
-    font-size: 25px;
-    padding: 15px;
-}
 
 li .material-symbols-outlined {
     display: none;
@@ -317,6 +312,10 @@ li .material-symbols-outlined {
     font-weight: bolder;
 }
 
+li .material-symbols-outlined {
+    display: block;
+    font-size: 15px;
+}
 
 .defilement .material-symbols-outlined {
     font-size: 25px;
