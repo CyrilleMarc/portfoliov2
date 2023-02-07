@@ -49,6 +49,8 @@ nav ul li{
     letter-spacing: .1rem;
     text-decoration: none;
     display: flex;
+    justify-content: space-between;
+    align-items: baseline;
 }
 
 .defilement {
