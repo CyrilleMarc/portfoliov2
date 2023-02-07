@@ -250,6 +250,10 @@ footer .colonne p:hover{
 .page-content .passions a{
     text-decoration: none;
 }
+.aka {
+    color: red;
+    font-size: 15px;
+}
 
 
 
