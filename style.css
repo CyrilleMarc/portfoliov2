@@ -1,5 +1,7 @@
 body {
   padding: 0 2%;
+  background-color: black;
+  color: white;
 }
 
 /* PAGE INDEX */
@@ -10,7 +12,6 @@ nav {
   align-items: center;
   position: sticky;
   top: 0;
-  background-color: white;
 }
 
 nav .profile {
@@ -29,6 +30,7 @@ nav .profile h1 {
   margin-left: 10px;
   font-family: "Raleway", sans-serif;
   font-weight: bolder;
+  color: white;
 }
 
 nav ul {
@@ -44,7 +46,7 @@ nav ul li {
   cursor: pointer;
   font-family: "Raleway", sans-serif;
   font-weight: bolder;
-  color: black;
+  color: white;
   letter-spacing: 0.1rem;
   text-decoration: none;
   display: flex;
@@ -121,8 +123,12 @@ nav ul li {
 }
 
 .page-content .projects-section .projects {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .page-content .projects-section .projects .project {
